@@ -1,0 +1,44 @@
+.reserve
+    .row
+        padding-bottom: 24px
+    .shadowControl.show        
+        border-bottom-right-radius: 8px
+        border-bottom-left-radius: 8px
+        box-shadow: 1px 4px 10px #00000029
+                
+    .card
+        background-color: $secondary    
+        border-bottom: 1px solid $white
+        display: none
+    .card.show
+        display: flex
+    .priceHide
+        display: flex
+        opacity: 1
+    .priceHide.hide
+        opacity: 0
+    .priceShow
+        display: none
+    .priceShow.show
+        display: flex
+#priceControl
+    user-select: none
+.received
+    table
+        th
+            padding-left: 0
+@media screen and ( min-width: 768px )
+    .reserve
+        .row
+            padding-bottom: 417px
+        .card
+            display: flex
+        .priceShow
+            display: flex
+        .priceShow
+            .font-m
+                font-size: 16px
+@media screen and ( min-width: 1200px )
+    section.received.container
+        padding: 0 205px
+    

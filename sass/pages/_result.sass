@@ -1,0 +1,159 @@
+.searchResult
+    overflow: hidden
+    .dropdown
+        &:nth-child(1), &:nth-child(2)
+            border-right: 1px solid $white
+        width: 33.333%
+        .dropdown-toggle
+            justify-content: center
+%hotel-bgimg
+    width: 150px
+    height: 150px
+    margin-left: -15px
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+
+
+.hotel__item
+    position: relative
+    margin-bottom: 4px
+    .discount
+        bottom: 100%
+    &:after
+        content: ""
+        display: block
+        position: absolute
+        top: 100%
+        width: calc( 100% + 15px + 15px)
+        height: 4px
+        background-color: $secondary
+        transform: translateX( -15px ) 
+    &:nth-child(10)
+        &:after
+            display: none
+.hotel
+    a
+        &:nth-child(1)
+            .hotel__item__img
+                background-image: url('../img/Rachada1.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(2)
+            .hotel__item__img
+                background-image: url('../img/Phaya.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(3)
+            .hotel__item__img
+                background-image: url('../img/Bangkapi.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(4)
+            .hotel__item__img
+                background-image: url('../img/Chatuchack1.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(5)
+            .hotel__item__img
+                background-image: url('../img/Chatuchack2.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(6)
+            .hotel__item__img
+                background-image: url('../img/RangRak.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(7)
+            .hotel__item__img
+                background-image: url('../img/Watana1.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(8)
+            .hotel__item__img
+                background-image: url('../img/Watana2.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(9)
+            .hotel__item__img
+                background-image: url('../img/DinDaeng1.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(10)
+            .hotel__item__img
+                background-image: url('../img/DinDaeng2.jpg')
+                @extend %hotel-bgimg
+        &:nth-child(10)
+            .hotel__item:after
+                    display: none
+    
+
+.hotel__item__info
+    width: calc( 100% - 150px - 8px)
+    // margin-right: -15px
+    .material-icons
+        font-size: 18px
+
+.searchResult__nav
+    left: 255px
+    width: 100%
+    bottom: 0
+.searchResult
+    .form-check
+        position: relative
+        user-select: none
+        cursor: pointer
+
+
+
+.rateGroup
+    border-bottom: 1px solid $white
+    &:last-child
+        border: none
+    .material-icons
+        font-size: 18px
+        color: #000000
+.w-50
+    &:nth-child(1)
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            height: 36px
+            width: 1px
+            background-color: $secondary
+            right: -4px
+            top: 0
+.tag
+    top: calc( 100% + 10px )
+.tag__item
+    border-radius: 5px
+    padding: 3px
+    color: $dark
+
+
+@media screen and ( min-width: 768px  )
+    .searchResult
+        h1, .h1
+            font-size: 32px
+            // transform: translateX(-15px)
+            margin-bottom: 0
+        .dropdown 
+            width: 180px !important
+            &:nth-child(1), &:nth-child(2)
+                border-right: none
+            .btn
+                background-color: $white
+                padding-top: 10px
+                padding-bottom: 10px
+        .btn-primary
+            padding: 16px 32px
+    %hotel-bgimg
+        margin-left: 0px
+    .hotel__item
+        &:after
+            width: calc( 100% + 15px)
+            transform: translateX(0) 
+            height: 1px
+
+@media screen and ( min-width: 992px )
+    .searchResult
+        .dropdown
+            width: 312px !important
+    
+    %hotel-bgimg
+        width: 255px
+        height: 175px
+    .mb-custom-lg-2
+        margin-bottom: 12px !important

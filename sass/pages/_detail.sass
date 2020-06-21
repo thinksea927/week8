@@ -1,0 +1,143 @@
+.room
+    img
+        width: 150px
+        height: 150px
+        object-fit: cover
+        border-top-left-radius: 4px
+.searchResult.detail
+    .dropdown
+        position: relative
+        &:nth-child(1), &:nth-child(2)
+            border-right: none
+            &::after
+                content: "・"
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: -4px
+                color: $dark
+                font-size: 14px
+    .container > .material-icons
+        top: 50%
+        transform: translateY(-50%)
+        left: 4px
+
+%bg-cover
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    border-radius: 4px
+
+
+
+.photoLibrary
+    .col-7
+        .photoLibrary__img
+            background-image: url("../img/Rachada1.jpg")
+            height: 268px
+            @extend %bg-cover
+
+    .col-5
+        margin-left: -24px
+    .col-5
+        .photoLibrary__upperPart__img
+            background-image: url("../img/Rachada2.jpg")
+            height: 132px
+            @extend %bg-cover
+.photoLibrary__bottomPart
+    .photoLibrary__bottomPart__img
+        &:nth-child(1)
+            background-image: url("../img/Rachada3.jpg")
+            height: 132px
+            width: 44.59%
+            @extend %bg-cover
+    .d-block
+        width: 54.054%
+        .photoLibrary__bottomPart__img
+            background-image: url("../img/Rachada4.jpg")
+            height: 93px
+            width: 100%
+            @extend %bg-cover
+.room__detail__item__icon
+    text-transform: capitalize
+
+.popout
+    bottom: 0px
+    z-index: 1
+    display: none
+    .container
+        padding: 0
+    .col
+        span
+            &:nth-child(1)
+                color: #FFFFFF98
+            &:nth-child(2)
+                color: #FFFFFFDD
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px
+
+    box-shadow: 1px -4px 8px #00000029
+    .col
+        &:nth-child(2)
+            .btn
+                padding: 16px 50px
+                &:nth-child(1)
+                    border: 1px solid #FFFFFF
+
+@media screen and ( min-width: 768px )
+    .searchResult.detail
+        .dropdown
+            &:nth-child(1), &:nth-child(2)
+                &::after
+                    display: none
+    .detail
+        h1.h1
+            line-height: 1
+    .room
+        .col.col-md-4
+            .container.bg-secondary
+                background-color: $white !important
+            input.bg-secondary
+                background-color: $white !important
+    .room__detail
+        .room__detail__item
+            &:nth-child(1)
+                width: 182px
+                
+    .border.border-secondary
+        border-left: none !important
+        border-right: none !important
+        border-top: none !important
+    .roomList
+        h2.h2
+            font-size: 24px
+        .room
+            &:last-child
+                .border.border-secondary
+                    border-bottom: none !important
+    .roomList__title
+        border-bottom: 1px solid $secondary
+
+    .room__detail.col-md-9
+            transform: translateX(-15px)
+    .popout
+        .container
+            padding: 0 15px
+        .col
+            &:nth-child(2)
+                .btn
+                    padding: 16px 32px
+@media screen and ( min-width: 992px )
+    .room
+        img
+            width: 255px
+            height: 175px
+
+@media screen and ( min-width: 1200px )
+    .room__detail
+        max-width: 300px
+        flex: 0 0 300px
+    .room__detail__item-w50
+        width: 50%
+    .room__detail__item__icon
+        width: 100%

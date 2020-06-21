@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Raleway:wght@400;700;800&amp;family=Open+Sans:wght@400;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <title>week8</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="material-icons">menu</span></button><a class="navbar-brand" href="index.html"><img src="img/logo-aloha.svg" alt="aloha"/></a>
+        <div class="collapse navbar-collapse font-roboto" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-5">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="material-icons">language</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">English</a><a class="dropdown-item" href="#">中文(繁體)</a><a class="dropdown-item" href="#">Japanese</a></div>
+              </div>
+            </li>
+            <li class="nav-item mr-5 d-flex align-items-center"><a class="nav-link" href="#">Sing up</a></li>
+          </ul>
+        </div>
+        <li class="nav-item d-flex align-items-center"><a class="nav-link" href="login.html">Login</a></li>
+      </nav>
+    </header>
+    <section class="reserve container mt-md-3">
+      <div class="row flex-column flex-md-row justify-content-lg-center">
+        <div class="col col-md-6 order-md-2 bg-secondary mb-3 mb-md-0 shadowControl col-xl-4">
+          <div class="d-flex justify-content-between py-2 d-md-none">
+            <div class="priceHide"><span class="font-m text-dark mr-1">Total</span><span class="font-m font-weight-bold">TWD 4,633</span></div>
+            <div class="d-flex" id="priceControl" role="button">
+              <div class="text-primary uppercase font-weight-bold font-m">Detail</div>
+              <div class="material-icons text-primary">keyboard_arrow_down</div>
+            </div>
+          </div>
+          <div class="card py-2 py-md-3">
+            <div class="card-title font-weight-bold mb-2">Booking details</div>
+            <ul class="card-body font-m text-dark p-0">
+              <li class="mb-1">17 June 2020 - 19 June 2020・2 nights</li>
+              <li class="mb-1">2 adults・1 room</li>
+              <li>Rachada Hotel</li>
+            </ul>
+          </div>
+          <div class="card py-2 py-md-3">
+            <div class="card-title font-weight-bold mb-2">Price summary</div>
+            <div class="card-body font-m text-dark p-0">
+              <div class="d-flex justify-content-between mb-1"><span>Deluxe Suite with Pool</span><span>TWD 3,960</span></div>
+              <div class="d-flex justify-content-between mb-1"><span>VAT (7%)</span><span>TWD 277</span></div>
+              <div class="d-flex justify-content-between"><span>Property service charge</span><span>TWD 396</span></div>
+            </div>
+          </div>
+          <div class="priceShow justify-content-between py-2 py-md-3"><span class="font-m text-dark">Total</span><span class="font-m font-weight-bold">TWD 4,633</span></div>
+        </div>
+        <div class="col col-md-6 order-md-1 col-xl-4">
+          <form>
+            <h2 class="h2 font-raleway font-weight-bold mb-3">Reservation details</h2>
+            <label for="name">Name</label>
+            <div class="input-group mb-3">
+              <input class="form-control" id="name" type="text" aria-describedby="basic-addon3"/>
+            </div>
+            <label for="email">Email</label>
+            <div class="input-group mb-3">
+              <input class="form-control" id="email" type="text" aria-describedby="basic-addon3"/>
+            </div>
+            <label for="phone">Phone (optional)</label>
+            <div class="input-group mb-3">
+              <input class="form-control" id="phone" type="text" aria-describedby="basic-addon3"/>
+            </div><a class="btn btn-primary uppercase w-100 py-2 font-weight-bold mb-1" href="reserve_received.html">Reserve</a>
+            <div class="text-primary font-m text-center font-roboto">Reserve now, pay at stay</div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="reserve container p-3 py-md-2 d-flex flex-column align-items-center flex-md-row align-items-md-center justify-content-md-between">
+        <ul class="d-flex font-m order-md-2 mb-2 mb-md-0">
+          <li class="mr-3"><a class="text-dark" href="#">FAQs</a></li>
+          <li class="mr-3"><a class="text-dark" href="#">Terms of use</a></li>
+          <li><a class="text-dark" href="#">Privacy policy</a></li>
+        </ul>
+        <div class="font-m text-dark order-md-1">© 2020 ALOHA, Inc. All rights reserved.</div>
+        <ul class="font-m order-lg-3 d-none d-lg-flex">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="footerDropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="material-icons">language </div><span class="ml-1 font-m">English</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="footerDropdownLanguage"><a class="dropdown-item active">English</a><a class="dropdown-item">中文(繁體)</a><a class="dropdown-item">Japanese</a></div>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="footerDropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="material-icons">attach_money</div><span class="ml-1 font-m">TWD</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="footerDropdownCurrency"><a class="dropdown-item active">USD</a><a class="dropdown-item">NTD</a><a class="dropdown-item">EURO</a></div>
+          </div>
+        </ul>
+      </section>
+    </footer>
+    <script>
+      $(function(){
+          $('.arrow-down').click(function(){
+              $('.arrow-down').hide();
+              $('.arrow-up').show();
+      
+      
+          });
+          $('.arrow-up').click(function(){
+              $('.arrow-up').hide();
+              $('.arrow-down').show();
+      
+      
+          });
+      
+          //- $(".carousel").carousel('pause');
+          var swiper = new Swiper('.swiper-container', {
+              // 若要顯示圖片自訂大小，不要做均分的話，就要設為auto
+              slidesPerView: 'auto',
+              spaceBetween: 30,
+          });
+      
+          $('#reserveRoom').click(function(){
+              $('.popout').css('display', 'flex');
+      
+      
+          })
+          
+          $('#cancelPopout').click(function(){
+              $('.popout').css('display', 'none');
+      
+      
+          })
+          //- $('#reserveRoom').blur(function(){
+              //- $('.popout').css('display', 'none');
+          //- })
+      
+          $('#priceControl').click(function(){
+              $('.card').toggleClass('show');
+              $('.priceShow').toggleClass('show');
+              $('.priceHide').toggleClass('hide');
+              $('.shadowControl').toggleClass('show');
+      
+          })
+      
+      });
+    </script>
+  </body>
+</html>

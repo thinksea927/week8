@@ -1,0 +1,11 @@
+/node_modules
+/pug
+/header.html
+/footer_reserve.html
+/footer_index.html
+/footer.html
+/layout.html
+/layout_index.html
+/layout_reserve.html
+/script.html
+/css/all.css.map

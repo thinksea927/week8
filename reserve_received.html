@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Raleway:wght@400;700;800&amp;family=Open+Sans:wght@400;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <title>week8</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="material-icons">menu</span></button><a class="navbar-brand" href="index.html"><img src="img/logo-aloha.svg" alt="aloha"/></a>
+        <div class="collapse navbar-collapse font-roboto" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-5">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="material-icons">language</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">English</a><a class="dropdown-item" href="#">中文(繁體)</a><a class="dropdown-item" href="#">Japanese</a></div>
+              </div>
+            </li>
+            <li class="nav-item mr-5 d-flex align-items-center"><a class="nav-link" href="#">Sing up</a></li>
+          </ul>
+        </div>
+        <li class="nav-item d-flex align-items-center"><a class="nav-link" href="login.html">Login</a></li>
+      </nav>
+    </header>
+    <section class="received container">
+      <h2 class="h2 py-3 mb-md-4 line font-weight-bold font-raleway border-bottom">Reservation received!</h2>
+      <table class="table table-borderless mb-0">
+        <tbody>
+          <tr>
+            <th class="font-m" scope="row">Guest</th>
+            <td class="text-dark font-m"> David Lin</td>
+          </tr>
+          <tr>
+            <th class="font-m" scope="row">Email</th>
+            <td class="d-md-flex align-items-md-center">
+              <div class="text-dark font-m mr-md-2">David0520@mail.com.tw</div>
+              <div class="text-primary font-s">Confirmation email sent to this address</div>
+            </td>
+          </tr>
+          <tr class="border-bottom">
+            <th class="font-m pb-3" scope="row">Phone</th>
+            <td class="text-dark font-m pb-3"> +886 9 32 456 789</td>
+          </tr>
+          <tr class="border-bottom">
+            <th class="font-m py-3" scope="row">Room</th>
+            <td class="text-dark font-m py-3"> Deluxe Suite with Pool / 2 nights</td>
+          </tr>
+          <tr>
+            <th class="font-m pt-3" scope="row">Check-in</th>
+            <td class="text-dark font-m pt-3"> Wednesday, 17 June 2020</td>
+          </tr>
+          <tr class="border-bottom">
+            <th class="font-m pb-3" scope="row">Check-out</th>
+            <td class="text-dark font-m pb-3"> Friday, 19 June 2020</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex flex-column flex-md-row pt-3 mb-6 pb-md-0 justify-content-md-end"><a class="btn btn-outline-primary uppercase font-weight-bold mb-1 mb-md-0 mr-md-1" href="#">edit reservation</a><a class="btn btn-primary uppercase font-weight-bold" href="index.html">Homepage</a></div>
+    </section>
+    <footer>
+      <section class="reserve container p-3 py-md-2 d-flex flex-column align-items-center flex-md-row align-items-md-center justify-content-md-between">
+        <ul class="d-flex font-m order-md-2 mb-2 mb-md-0">
+          <li class="mr-3"><a class="text-dark" href="#">FAQs</a></li>
+          <li class="mr-3"><a class="text-dark" href="#">Terms of use</a></li>
+          <li><a class="text-dark" href="#">Privacy policy</a></li>
+        </ul>
+        <div class="font-m text-dark order-md-1">© 2020 ALOHA, Inc. All rights reserved.</div>
+        <ul class="font-m order-lg-3 d-none d-lg-flex">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="footerDropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="material-icons">language </div><span class="ml-1 font-m">English</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="footerDropdownLanguage"><a class="dropdown-item active">English</a><a class="dropdown-item">中文(繁體)</a><a class="dropdown-item">Japanese</a></div>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="footerDropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="material-icons">attach_money</div><span class="ml-1 font-m">TWD</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="footerDropdownCurrency"><a class="dropdown-item active">USD</a><a class="dropdown-item">NTD</a><a class="dropdown-item">EURO</a></div>
+          </div>
+        </ul>
+      </section>
+    </footer>
+    <script>
+      $(function(){
+          $('.arrow-down').click(function(){
+              $('.arrow-down').hide();
+              $('.arrow-up').show();
+      
+      
+          });
+          $('.arrow-up').click(function(){
+              $('.arrow-up').hide();
+              $('.arrow-down').show();
+      
+      
+          });
+      
+          //- $(".carousel").carousel('pause');
+          var swiper = new Swiper('.swiper-container', {
+              // 若要顯示圖片自訂大小，不要做均分的話，就要設為auto
+              slidesPerView: 'auto',
+              spaceBetween: 30,
+          });
+      
+          $('#reserveRoom').click(function(){
+              $('.popout').css('display', 'flex');
+      
+      
+          })
+          
+          $('#cancelPopout').click(function(){
+              $('.popout').css('display', 'none');
+      
+      
+          })
+          //- $('#reserveRoom').blur(function(){
+              //- $('.popout').css('display', 'none');
+          //- })
+      
+          $('#priceControl').click(function(){
+              $('.card').toggleClass('show');
+              $('.priceShow').toggleClass('show');
+              $('.priceHide').toggleClass('hide');
+              $('.shadowControl').toggleClass('show');
+      
+          })
+      
+      });
+    </script>
+  </body>
+</html>
